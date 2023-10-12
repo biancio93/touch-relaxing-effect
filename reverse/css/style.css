@@ -37,12 +37,13 @@
     background-color:#2D5589;
 }
 .circle{
-opacity:0;
-transition:0.1s ease;
+opacity:1;
+transition:0.3s ease;
 }
+
 .circle.active{
-    opacity:1;
-    transition:0.1s ease;
+    opacity:0;
+    transition:0.3s ease;
     animation-name: circle-animation;
     animation-timing-function: ease;
     animation-duration:0.3s;
@@ -52,7 +53,7 @@ transition:0.1s ease;
         transform:scale(1);
     }
     50%{
-        transform:scale(2);
+        transform:scale(3);
     }
     100%{
         transform:scale(1);
