@@ -1,0 +1,61 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    width:100vw;
+    height:100vh;
+    background-color: black;
+    overflow: hidden;
+    justify-content: space-around;
+}
+.grid div{
+    width:3vw;
+    height: 3vw;
+    border-radius: 2vw;
+}
+
+.red{
+    background-color:#E5645E;
+}
+.yellow{
+    background-color:#FBA74F;
+}
+.light-yellow{
+    background-color:#F5D485;
+}
+.green{
+    background-color:#3BAA9A;
+}
+.light-blue{
+    background-color:#22B7F1;
+}
+.blue{
+    background-color:#2D5589;
+}
+.circle{
+opacity:0;
+transition:0.3s ease;
+}
+.circle.active{
+    opacity:1;
+    transition:0.3s ease;
+    animation-name: circle-animation;
+    animation-timing-function: ease;
+    animation-duration:0.3s;
+}
+@keyframes circle-animation{
+    0%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(3);
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+
